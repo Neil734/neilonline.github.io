@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source Code Pro:wght@550&display=swap");
+
+
+:root{
+    --id:#81a2be;
+    --value:#2aa198;
+    --class:#4271ae;
+    --comment:#7c7c7c;
+    --property:#eab700;
+    --important:#c82829;
+    --type-selector:#8959a8;
+    --other:#7ae483;
+}
+.css-comment{color: var(--comment);}
+
+.css-type-selector{color: var(--type-selector);}
+
+.css-property{color: var(--property)}
+
+.css-other{color: var(--other);}
+
+.css-value{color: var(--value);}
+
+
+
+
+.css{user-select: none;}
+
+
+
+
+
+
+
+
+
+
+
+body{  
+    background-image: linear-gradient(to left, #4BB4E0, #58B2DB, #CCB0CF, #DAA3C0, #DD9FBD, #4BB4E0, #58B2DB, #CCB0CF 104.2%);
+    background-size: 400% 100%;
+    animation: gradient-border 8s linear infinite;
+}
+*{color:white;font-family: 'Poppins', sans-serif;}
+
+p1{text-decoration: underline;}
+
+p2::before{content:"• "}
+p2{margin-top: 10px; word-wrap: break-word;word-spacing: normal;width: 60%;font-size: 15px;}
+
+#codeText{user-select: none;}
+
+code {
+    font-family: 'Source Code Pro';
+    margin-left: 10%;
+    position: absolute;
+    top:10px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-right:10px;
+    height:250px;
+    overflow-y: scroll;
+    margin-left: 40px;
+    white-space: pre-wrap;
+}
+
+@keyframes gradient-border {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+    @media (min-width:400px) {
+        code{position:absolute;
+             bottom:0px;
+             left:50%;
+        }       
+    }
+
+
+::-webkit-scrollbar, ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:hover {
+    visibility: hidden;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:50px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+}
+.extra, a{
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 10px;   
+}
+.footer span::after{
+    position: fixed;
+    right:10px;
+    content:" Company © cedrickzedd. All rights reserved.";
+}
+
+
+.logo{width:32px;height:32px;border-radius: 50%;order: -1; margin-left: 20px;}
